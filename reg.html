@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+  <style>
+    body {
+        background-image: url(dark\ backgound.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: azure;
+      font-family: sans-serif;
+    }
+
+    .container {
+      width: 400px;
+      padding: 20px;
+      background-color: rgba(0,0,0,0,0.5);
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      
+    }
+
+    .container h2 {
+      text-align: center;
+      padding: 30px;
+    }
+
+    .container input[type="text"],
+    .container input[type="password"] {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .container input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .container input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    select{
+        height: 30px;
+        width: 100px;
+    }
+    p{
+        text-align: center;
+    }
+    a{
+        color: aliceblue ;
+    }
+  </style>
+<body>
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form>
+        <label for="fnam">First Name:</label>
+      <input type="text" placeholder="Enter your First name">
+      <label for="lname">Last Name:</label>
+      <input type="text" placeholder="Enter your Last name">
+      <label for="email">Email:</label>
+      <input type="text" placeholder="Enter your Email">
+      <label for="pass">Password:</label>
+      <input type="password" placeholder="Enter your Password">
+      <br>
+      <h3>Gender</h3>
+
+      <input type="radio">
+      <label for="gen">Male</label> &nbsp; &nbsp;
+      <input type="radio">
+      <label for="gen">Female</label>
+      <br>
+      <h3>District</h3>
+      <select name="District" id="drop">
+        <option value="option1">Lahore</option>
+        <option value="option2">Islamabad</option>
+        <option value="option3">Karachi</option>
+      </select> 
+      <br>
+      <br>
+      <input type="checkbox">
+      <label for="">I agree with the terms and conditions.</label>
+      <br>
+      <br>
+      <input type="submit" value="Register">
+    </form>
+    <p>Have Already an account ? <a href="#">Login</a></p>
+  </div>
+</body>
+</html>
