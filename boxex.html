@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxes</title>
+</head>
+  <style>
+    .container {
+        margin-left: 500px;
+      width: 800px;
+      height: 800px;
+      border: 2px solid black;
+      position: relative;
+      background-color: brown;
+    }
+
+    .box {
+      position: absolute;
+      border: 1px solid black;
+      width: 200px;
+      height: 200px;
+      background-color: cornflowerblue;
+    }
+
+    .top-left {
+      top: 0;
+      left: 0;
+    }
+
+    .top-right {
+      top: 0;
+      right: 0;
+    }
+
+    .bottom-left {
+      bottom: 0;
+      left: 0;
+    }
+
+    .bottom-right {
+      bottom: 0;
+      right: 0;
+    }
+
+    .center-box {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+    <h1>BOXES</h1>
+    <br> <br>
+  <div class="container">
+    <div class="box top-left"> <h1>box1</h1></div>
+    <div class="box top-right"> <h1>box2</h1></div>
+    <div class="box bottom-left"> <h1>box3</h1></div>
+    <div class="box bottom-right"> <h1>box4</h1></div>
+    <div class="box center-box"><h1>box5</h1></div>
+  </div>
+
+  what is egma,  5,6,7
+</body>
+</html>
